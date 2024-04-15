@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- nav css -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-vB+uYZ2aI/0foh2fkoqrrt0A7iAT5xCgQ3INjv0XzIzXsEsnHjT1uLzmu6KzY0Ydzq4L2blXWiW2qT+rujHyrzw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .banner {
+            background: url(assets/Individuals-image.jpg);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+    </style>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+        a.read-more {
+            font-weight: 700;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+        .b2:hover {
+            background-color: orange;
+            opacity: 0.6;
+            height: 50px;
+            width: 50px;
+            padding: 50px;
+        }
+
+        /* .read-more {
+    background: #fba704;
+    color: #333 !important;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+} */
+    </style>
+</head>
+
+<body>
+
+
+    <!-- banner image -->
+    <div class="banner">
+
+    </div>
+
+    <!-- navbar -->
+
+    <!-- NAVBAR -->
+    <nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="assets/CI4.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 1 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        WHO WE ARE
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                                Work</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                                Team</a></li>
+                    </ul>
+                </li>
+    
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        OUR WORK
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('education.html')">Education</a></li>
+    
+                    </ul>
+                </li>
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        ACHIEVEMENTS
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                        <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                                Partners</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html"
+                                onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+    
+                    <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        MAKE A DIFFERENCE
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item list"
+                                href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('corporates.html')">Corporates</a></li>
+                    </ul>
+                </li>
+    
+    
+            </ul>
+    
+            <div class="box-s">
+                <input type="text" class="inp-s" placeholder="Search" name="" id="">
+                <a href="">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--div  -->
+    <div style="position: relative;">
+        <div class="mx-auto"
+            style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+            <a href=""
+                style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home
+                ></a>
+            <a href=""
+                style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Make
+                A Difference ></a>
+            <a href=""
+                style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Individuals</a>
+        </div>
+
+        <div class="mx-auto"
+            style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+            <div class="progress" style="height: 150px;z-index: -1;">
+                <div class="progress-bar progress-bar-striped " role="progressbar"
+                    style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">
+                Individuals</h1>
+        </div>
+    </div>
+
+    <!-- -------------------------- -->
+
+    <div class="container">
+        <div class="row">
+            <!-- <div>
+                <a href="https://www.careindia.org/make-a-difference/individuals/" id="tab-" class="nav link active">
+            </div> -->
+
+            <div class="col-sm" style="background-color:orangered;">
+                <img src="https://www.careindia.org/wp-content/themes/careindia/images/Individuals.svg" alt=""
+                    height="120px" style="margin-left: 150px;">
+                <h2 style="font-size: 2rem; padding-top:40px; color: white; font-weight: 700;">Individuals</h2>
+            </div>
+            <div class="col-sm" style="background-color:orangered;">
+                <img src="https://www.careindia.org/wp-content/themes/careindia/images/corporates.svg" alt=""
+                    height="120px" style="margin-left: 150px;">
+                <h2 style="font-size: 2rem; padding-top:40px; color: white; font-weight: 700;">Corporates</h2>
+            </div>
+            <div class="col-sm" style="background-color:orangered;">
+                <img src="https://www.careindia.org/wp-content/themes/careindia/images/Institutions.svg" alt=""
+                    height="120px" style="margin-left: 150px;">
+                <h2 style="font-size: 2rem; padding-top:40px; color: white; font-weight: 700;">Institutional partners
+                </h2>
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------------------div-------------------- -->
+    <!-- <div class="container" style="padding: 60px;">
+        <div class="row">
+            <div class="col-sm" style="margin-left: 10px; padding-left:40px; ">
+                <h2 style="color: darkblue; font-weight: 700; font-size: rem; margin-right: 20px;">“Be the change that you want to see”</h2>
+                <h4>- Mahatma Gandhi</h4>
+            </div>
+            <div class="col-sm">
+                <p>Each one of us has the capacity to make a difference and help lend a helping hand to the less fortunate around us. Your strong intent to make a difference, can take the form of engaging in campaigns for the betterment of the society, volunteering and working directly with communities, supporting fund raising and monetary contributions to the causes of your choice. Be a part of our endeavour to work for the marginalised.</p>
+            </div>
+        </div>
+    </div> -->
+    <div class="container" style="padding: 60px;">
+        <div class="row">
+            <div class="col-sm" style="margin-left: 10px; padding-left: 70px;">
+                <h2
+                    style="color: darkblue; font-weight: 800; font-size: 1.5rem; margin-right: 20px; margin-bottom: 10px;">
+                    “Be the change that you want to see”</h2>
+                <h4 style="margin-top: 0;">- Mahatma Gandhi</h4>
+            </div>
+            <div class="col-sm">
+                <p style="margin-top: 10px;">Each one of us has the capacity to make a difference and help lend a
+                    helping hand to the less fortunate around us. Your strong intent to make a difference, can take the
+                    form of engaging in campaigns for the betterment of the society, volunteering and working directly
+                    with communities, supporting fund raising and monetary contributions to the causes of your choice.
+                    Be a part of our endeavour to work for the marginalised.</p>
+            </div>
+        </div>
+    </div>
+<!-- image -->
+<div class="row">
+    <div class="col-sm-6">
+        <div class="bg" style="padding:auto;">
+            <img src="https://www.careindia.org/wp-content/uploads/2022/01/high-value.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            <h1 style="text-align: center; margin-top: -200px;" class="tra">High Value Contribution</h1>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="bg" style="padding:auto;">
+            <img src="https://www.careindia.org/wp-content/uploads/2022/01/pledge-your.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            <h1 style="text-align: center; margin-top: -200px;">Pledge your Support</h1>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="bg" style="padding:auto;">
+            <img src="https://www.careindia.org/wp-content/uploads/2021/09/donate-image.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            <h1 style="text-align: center; margin-top: -200px;">Donate</h1>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="bg" style="padding:auto;">
+            <img src="https://www.careindia.org/wp-content/uploads/2021/09/campaign-image.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            <h1 style="text-align: center; margin-top: -200px;">Campaigns</h1>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="bg" style="padding:auto;">
+            <img src="https://www.careindia.org/wp-content/uploads/2021/09/volunteer-image.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            <h1 style="text-align: center; margin-top: -200px;">Volunteer</h1>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="bg" style="padding:auto;">
+            <img src="https://www.careindia.org/wp-content/uploads/2021/09/intership-image.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            <h1 style="text-align: center; margin-top: -200px;">Internship</h1>
+        </div>
+    </div>
+</div><br><br><br><br><br><br>
+    <!-- ---------------------------------------------------------- -->
+    <div class="container-fluid" style="background-color:rgb(129, 129, 129);text-align: center; height: 500px;">
+        <h2 style="font-size: 2.5rem; color:darkblue; text-align: center; font-weight: 700; ">Careers</h2>
+        <p style="font-size: 1.5rem; color: white; font-family: 700; font-family: sans-serif; margin-top: 100px;">Be part
+            of a team that focuses on developing the potential of women and girls to drive long lasting equitable
+            change.</p>
+        <p style="font-size: 1.5rem; color: white; font-family: 700; font-family: sans-serif; margin-top: 100px;">Write
+            to us at <a href="https://www.careindia.org/make-a-difference/individuals/" style="color: orange;">
+                contactus(at)careindia.org </a> to join the CARE India team, as we fight the underlying causes of
+            poverty, build secure and flexible communities, and ensure a life of dignity for all women and girls from
+            the most deprived and vulnerable communities.</p>
+        <!-- <button type="button">Apply Now</button> -->
+        <p style="padding: 40px;">
+            <a href="https://careindiacareers.peoplestrong.com/home" target="_blank" style=" background: #fba704;color: #333 !important;
+            padding: 10px 15px;
+            font-family: 'Fira Sans Condensed', sans-serif;" >Apply Now</a>
+        </p>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container" style="text-align: center; padding: 50px;">
+        <h2 style="font-size: 3.4rem; color:navy; font-weight: 700;">Start a Fundraiser</h2>
+        <p style="font-size: 25px; font-family: sans-serif;padding: 20px;">Raise funds from your network for the cause that you believe in. Start a fundraiser for free today and begin your journey of making a difference and impacting lives.</p>
+        <h4 style="font-size: 2rem; padding: 20px; font-weight: bold; font-family: sans-serif;">We are present on these platforms.</h4>
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2021/09/giveaway.jpg" alt="" style="height: 160px;">
+            </div>
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2021/09/ketto.jpg" alt="" style="height: 160px; padding: 20px;">
+            </div>
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2021/09/give-india.jpg" alt=""style="height: 160px;">
+            </div>
+        </div>
+    </div>
+
+       <!-- contact  -->
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+       <div id="contact_"></div>
+       <script>
+           // Load the contact from an external HTML file
+           $(function () {
+               $("#contact_").load("contact_without.html");
+           });
+       </script>   
+   
+       <!-- contact addition complete -->
+
+       <!-- footer  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="footer_" class="container-fluid"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#footer_").load("footer_without.html");
+        });
+    </script>
+
+    <!-- footer addition complete -->
+</body>
+
+</html>

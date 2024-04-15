@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: blue;
+            font-size: 50px;
+            text-shadow: 0 1px 0 blue;
+            text-align: center;
+        }
+        h3{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            text-shadow: 0 1px 0 coral;
+        }
+        h3 span{
+            background-color: coral;
+
+        }
+        p{
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            text-shadow: 0 1px 0 black;
+        }
+
+        .programs {
+    background-color: #e2e2e2;
+}
+
+.programs .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 80px;
+}
+
+.programs .boxContainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.programs .boxContainer .box .cardImage{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    overflow: hidden;
+    border-radius:5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage:after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after
+{
+background-image: url("assets/imag1.jpg");
+
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after
+{
+background-image: url("assets/imag2.jpg");
+
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after
+{
+background-image: url("assets/imag3.jpg");
+}
+
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage:after
+{
+background-image: url("assets/imag4.jpeg");
+}
+
+.programs .boxContainer .box:hover .cardImage:after {
+    top: 100%;
+}
+
+.programs .boxContainer .box .programTitle{
+font-size: 20px;
+margin-top: 15px;
+font-weight: 600;
+}
+.programs .boxContainer .box .programTitle:hover{
+    color: orangered;
+}
+
+.programs .boxContainer .para {
+    font-size: 25px;
+    font-family:"cambria";
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h2>CARE India is working for over 70 years to bring</h2>
+    <h3><span> holistic & sustainable changes</span></h3>
+    <p>Our Focus Areas</p>
+
+    <section class="programs" id="programsSection">
+        <div class="container">
+            <div class="boxContainer">
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Health 103.7 million people reached</div>
+                    <div class="para">
+                        Assisting in medical emergencies, reproductive, 
+                        maternal, neonatal, child and adolescent healthcare.
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Education 0.32 million people reached</div>
+                    <div class="para">
+                        Imparting 21st century skills like innovation, 
+                        problem solving and leadership to adolescents.
+                    </div>    
+                </div>
+                
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Livelihood 0.88 million people reached</div>
+                    <div class="para">
+                        Developing a professional and entrepreneurial 
+                        spirit among marginalised women and girls.
+                    </div>
+                    
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Disaster Relief 13 million people reached</div>
+                    <div class="para">
+                        Preparing communities for emergency mitigation, 
+                        response and recovery.
+                    </div>
+                    
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

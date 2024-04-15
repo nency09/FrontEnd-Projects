@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/c
+ss/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+            .banner{
+            background: url(assets/ourWork_banner.jpg);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+  
+
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+        </style>
+    </head>
+    <body>
+       
+    <!-- banner image -->
+    <div class="banner">
+       
+    </div>
+
+<!-- navbar -->
+
+<!-- NAVBAR -->
+<nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#"><img src="assets/CI4.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- 1 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                    WHO WE ARE
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                            Work</a></li>
+                    <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                            Team</a></li>
+                </ul>
+            </li>
+
+            <!-- 2 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                    OUR WORK
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                    <li><a class="dropdown-item  list" href="#"
+                            onclick="window.open('education.html')">Education</a></li>
+
+                </ul>
+            </li>
+            <!-- 3 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                    ACHIEVEMENTS
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                    <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                            Partners</a></li>
+                    <li><a class="dropdown-item  list" href="#shop1.html"
+                            onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                </ul>
+            </li>
+            <!-- 4 -->
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                    MAKE A DIFFERENCE
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item list"
+                            href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                    <li><a class="dropdown-item  list" href="#"
+                            onclick="window.open('corporates.html')">Corporates</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <div class="box-s">
+            <input type="text" class="inp-s" placeholder="Search" name="" id="">
+            <a href="">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    <!--div  -->
+    <div style="position: relative;">
+        <div class="mx-auto" style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+            <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home ></a>
+            <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Achievements ></a>
+            <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Our Partners</a>
+        </div>
+
+        <div class="mx-auto" style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+            <div class="progress" style="height: 150px;z-index: -1;" >
+                <div  class="progress-bar progress-bar-striped " role="progressbar" style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">Trusted By Our Partners</h1>
+        </div>
+    </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        Securing investments that strengthen communities through constructive, collaborative, 
+        and innovative engagements with our partners has always been our topmost agenda. 
+        Over the years, CARE India has partnered with influential institutions in both the public and private 
+        sectors to maximise the impact and influence of its projects and programmes across the country. 
+        These partnerships not only provide us financial support but also help us in running our programmes more effectively 
+        and efficiently. Increasingly, organisations have also been recognising the importance of value creation through social interventions 
+        along with business efforts. CARE India has been the partner of choice for multiple government organisations and social and economic institutions to extend 
+        their humanitarian efforts and make a difference in society.
+        <div class="row">
+            <div class="col-sm-3"><img src="assets/alstom-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/Accenture-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/cdp-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/bill-melinda-gates.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><img src="assets/titan-company.png"></div>
+            <div class="col-sm-3"><img src="assets/pi-foundation-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/glamour.png"></div>
+            <div class="col-sm-3"><img src="assets/Symantec_logo.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><img src="assets/thehansfoundation.png"></div>
+            <div class="col-sm-3"><img src="assets/oracle-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/hindustan-zink-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/glaxcosmitKline.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><img src="assets/general-mills-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/cargill-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/cairn-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/bnp-paribas.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><img src="assets/coca-cola-foundation.png"></div>
+            <div class="col-sm-3"><img src="assets/axa-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/amazon-logo.png"></div>
+            <div class="col-sm-3"><img src="assets/aareen-logo.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><img src="assets/TataProjects.jpg"></div>
+            <div class="col-sm-3"><img src="assets/Cadence-Logo.png"></div>
+            <div class="col-sm-3"><img src="assets/situs1.png"></div>
+            <div class="col-sm-3"><img src="assets/appcpl-logo.jpg"></div>
+        </div><br>
+
+         <!-- contact  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="contact_"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#contact_").load("contact_without.html");
+        });
+    </script>   
+
+    <!-- contact addition complete -->
+    
+       <!-- footer  -->
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+       <div id="footer_" class="container-fluid"></div>
+       <script>
+           // Load the contact from an external HTML file
+           $(function () {
+               $("#footer_").load("footer_without.html");
+           });
+       </script>
+   
+       <!-- contact addition complete -->
+
+</body>
+</html>

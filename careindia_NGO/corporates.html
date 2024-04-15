@@ -1,0 +1,442 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="corporates.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-vB+uYZ2aI/0foh2fkoqrrt0A7iAT5xCgQ3INjv0XzIzXsEsnHjT1uLzmu6KzY0Ydzq4L2blXWiW2qT+rujHyrzw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        h1 {
+            color: #004E7E;
+            font-size: 3rem;
+        }
+
+        h2 {
+            color: #E4701D;
+        }
+
+        .p {
+            color: #004E7E;
+            font-size: 30px;
+        }
+
+        h5 {
+            color: #004E7E;
+        }
+
+        /* image {
+            align: center;
+        } */
+
+        .b2:hover {
+            background-color: orange;
+            opacity: 0.6;
+            height: 50px;
+            width: 50px;
+            padding: 50px;
+        }
+
+        .dekhoAhmedabad,
+        .ran {
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .a:hover {
+            color: #E4701D;
+            /* align: center; */
+            text-decoration: none;
+        }
+      
+        .banner{
+            background: url(assets/Corporate_Banner-.jpg);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+ 
+
+ 
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+    </style>
+</head>
+
+<body>
+ <!-- banner image -->
+ <div class="banner">
+       
+ </div>
+
+<!-- navbar -->
+
+<!-- NAVBAR -->
+<nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#"><img src="assets\CI4.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- 1 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                    WHO WE ARE
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                            Work</a></li>
+                    <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                            Team</a></li>
+                </ul>
+            </li>
+
+            <!-- 2 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                    OUR WORK
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                    <li><a class="dropdown-item  list" href="#"
+                            onclick="window.open('education.html')">Education</a></li>
+
+                </ul>
+            </li>
+            <!-- 3 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                    ACHIEVEMENTS
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                    <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                            Partners</a></li>
+                    <li><a class="dropdown-item  list" href="#shop1.html"
+                            onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                </ul>
+            </li>
+            <!-- 4 -->
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                    data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                    MAKE A DIFFERENCE
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item list"
+                            href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                    <li><a class="dropdown-item  list" href="#"
+                            onclick="window.open('corporates.html')">Corporates</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <div class="box-s">
+            <input type="text" class="inp-s" placeholder="Search" name="" id="">
+            <a href="">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+ <!--div  -->
+ <div style="position: relative;">
+     <div class="mx-auto" style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+         <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home ></a>
+         <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Make a Difference></a>
+         <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Corporates</a>
+     </div>
+
+     <div class="mx-auto" style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+         <div class="progress" style="height: 150px;z-index: -1;" >
+             <div  class="progress-bar progress-bar-striped " role="progressbar" style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+         </div>
+         <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">Corporates</h1>
+     </div>
+ </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Through collaborations with the corporate sector, we aim to bring sustainable change at scale</h1>
+        </div>
+        <div class="col-md-6">
+           <p style="font-size: 1.8rem;"><a href="#" class="a">CARE India </a>recognises that the complex issues faced by modern India can only be
+            resolved when the state, the civil society, individuals and corporates join hands, and work with each other.
+            A wide lens approach that accommodates many more partners has become indispensable to avoid failures and
+            multiply the odds of success. The calls to leverage the efforts and capabilities of all stakeholders to step
+            up the impact of poverty reduction and social inclusion programmes are growing louder, and CARE India is
+            working to achieve this goal, through collaborations.</p> 
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center" style="font-size: 3rem; font-weight: 700;">Make An Impact</h2>
+        </div>
+        <div class="col-sm-12">
+            <p class="p text-center">Complex, deep rooted issues need Strong Partnership - Corporates, Government and
+                NGOs.
+                <br>
+                Let us join hands to being positive change to marginalized communication.
+            </p>
+        </div>
+    </div>
+
+    <div class="row" style="padding: 70px;">
+        <div class="col-sm-6">
+            <img src="assets/1.jpeg.jpg" height="90%" width="90%">
+            <h5 class="h5" style="padding: 20px; font-weight: 700; font-size: 1.6rem;">Economic Empowerment of Smallholders through Farmer Field Business School Model</h5>
+        </div>
+        <div class="col-sm-6">
+            <img src="assets/2.jpg" height="90%" width="90%">
+            <h5 class="h5" style="padding: 20px; font-weight: 700; font-size: 1.6rem;">Buliding 21st-century Skills for Marginalized Girls</h5>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="assets/3.jpg" height="90%" width="90%">
+            <h5 class="h5" style="padding: 20px; font-weight: 700; font-size: 1.6rem;">Enhancing Leadership and 21st-Century Skills for Adolescent Girls</h5>
+        </div>
+        <div class="col-sm-6">
+            <img src="assets/4.jpg" height="90%" width="90%">
+            <h5 class="h5" style="padding: 20px; font-weight: 700; font-size: 1.6rem;">STEM Innovator's Mobile Labs for Marginalised Communities</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="assets/5.jpg" height="90%" width="90%" class="img-fluid">
+            <h5 class="h5" style="padding: 20px; font-weight: 700; font-size: 1.6rem;">UDAAN- Empowering Marginalised Adolescent Girls For Education and Career Pathways</h5>
+        </div>
+    </div>
+    <h2 class="text-center">Ways to Partner</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="bg" style="padding:auto;">
+                <img src="assets/11.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="bg" style="padding:auto;">
+                <img src="assets/12.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="bg" style="padding:auto;">
+                <img src="assets/13.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="bg" style="padding:auto;">
+                <img src="assets/14.jpg" class="b2 rounded mx-auto d-block bg" style="padding:100px; height:100%; width:100%">
+            </div>
+        </div>
+    </div>
+    <h1 class="text-dark text-center">For more information, please write to us at</h1>
+    <div style="text-align: center;">
+        <a href="https://www.careindia.org/make-a-difference/individuals/"
+            style="color: orange;font-size: 2.5rem;font-weight: 500;">contactus(at)careindia.org </a>
+    </div>
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+<br><br><br>
+<div style="text-align: center; padding-top: 60px;">
+    <h2 style="font-size: 4rem; color: darkblue">Our Partners</h2>
+</div>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide"  data-bs-ride="carousel" style="padding: 60px; margin-left:450px;">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators" style="position: absolute; left: -270px; background-color: darkgray;">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+
+
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <table>
+            <tr>
+                <td><img src="assets/aareen-logo.png" alt=""></td>
+                <td><img src="assets/alstom-logo.png" alt=""></td>
+                <td><img src="assets/amazon-logo.png" alt=""></td>
+                <td><img src="assets/cairn-logo.png" alt=""></td>
+            </tr>
+        </table>
+      </div>
+      <div class="carousel-item">
+        <table>
+            <tr>
+                <td><img src="assets/titan-company.png" alt=""></td>
+                <td><img src="assets/coca-cola-foundation.png" alt=""></td>
+                <td><img src="assets/cargill-logo.png" alt=""></td>
+                <td><img src="assets/cdp-logo.png" alt=""></td>
+            </tr>
+        </table>
+      </div>
+      <div class="carousel-item">
+        <table>
+            <tr>
+                <td><img src="assets/Cadence-Logo.png" alt=""></td>
+                <td><img src="assets/general-mills-logo.png" alt=""></td>
+                <td><img src="assets/glamour.png" alt=""></td>
+                <td><img src="assets/glaxcosmitKline.png" alt=""></td>
+            </tr>
+        </table>
+      </div>
+      <div class="carousel-item">
+        <table>
+            <tr>
+                <td><img src="assets/bill-melinda-gates.png" alt=""></td>
+                <td><img src="assets/hdfc.png" alt=""></td>
+                <td><img src="assets/disnep-and-star-1.png" alt=""></td>
+                <td><img src="assets/hindustan-zink-logo.png" alt=""></td>
+            </tr>
+        </table>
+      </div>
+      <div class="carousel-item">
+        <table>
+            <tr>
+                <td><img src="assets/oracle-logo.png" alt=""></td>
+                <td><img src="assets/pi-foundation-logo.png" alt=""></td>
+                <td><img src="assets/bnp-paribas.png" alt=""></td>
+                <td><img src="assets/TataProjects.jpg" alt=""></td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- contact  -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <div id="contact_"></div>
+  <script>
+      // Load the contact from an external HTML file
+      $(function () {
+          $("#contact_").load("contact_without.html");
+      });
+  </script>   
+
+  <!-- contact addition complete -->
+
+  <!-- footer  -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<div id="footer_" class="container-fluid"></div>
+<script>
+   // Load the contact from an external HTML file
+   $(function () {
+       $("#footer_").load("footer_without.html");
+   });
+</script>
+
+<!-- footer addition complete -->
+</body>
+
+</html>

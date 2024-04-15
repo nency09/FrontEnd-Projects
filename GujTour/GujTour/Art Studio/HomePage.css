@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color:rgb(92, 61, 21);
+}
+
+nav{
+    background-color: rgb(195, 146, 83);
+    color: white;
+    display: flex;
+}
+
+ul{
+    margin-left: 10%;
+}
+
+li{
+    margin-left: 10px;
+}
+
+#signup{
+    padding-left: 450px;
+    margin-top: 8px;
+}
+#join{
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 19px;
+    padding: 12px;
+    text-decoration: none;
+}
+#join:hover{
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10%;
+    text-decoration: none;
+
+}
+.nav-link:hover{
+    border: 2px solid rgb(31, 19, 4) ;
+    background-color: rgb(31, 19, 4);
+    border-radius: 10%;
+    color: rgb(236, 204, 161) !important;
+}
+
+.btn .btn-light:hover{
+    border: 2px solid rgb(31, 19, 4) ;
+    background-color: rgb(31, 19, 4) !important;
+    border-radius: 10%;
+}
+
+
+
+button.bg-secondary:hover{
+    background-color: white !important;
+}
+
+h1{
+    color: black;
+}
+
+.details{
+    margin-left: 19px;
+    font-size: 20px;
+}
+
+article{
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.featureArt{
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image {
+    width: 100%; /* Makes the image responsive and fill its container */
+    border: 5px solid #333; /* Border color and width */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+    transition: transform 0.3s ease-in-out; /* Optional: Add a smooth transition effect */
+}
+
+.image:hover {
+    transform: scale(1.1); /* Optional: Enlarge the image on hover */
+}
+
+.featureArt:hover{
+    transform: scale(1.1);
+}
+
+article:hover{
+    transform: scale(1.1);
+}
+
+#picturepara{
+    background-color: rgb(250, 224, 185);
+    margin-left: 15%;
+    height: 500px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+}
+
+#picturepara1{
+    background-color: rgb(250, 224, 185);
+    margin-right: 15%;
+    height:500px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care India</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="navbar_CSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-vB+uYZ2aI/0foh2fkoqrrt0A7iAT5xCgQ3INjv0XzIzXsEsnHjT1uLzmu6KzY0Ydzq4L2blXWiW2qT+rujHyrzw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            z-index: 999;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 200px;
+            transition: 0.5s ease;
+        }
+
+        header .brand img {
+            height: 100px;
+            width: 80%;
+        }
+
+        header .navigation {
+            position: relative;
+        }
+
+        header .navigation .navigantion-item a {
+            position: relative;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: 0.3s ease;
+        }
+
+        header .navigation .navigantion-item a:before {
+            content: "";
+            position: absolute;
+            background: #fff;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            transition: o.3s ease;
+        }
+
+        header .navigation .navigantion-item a:hover:before {
+            width: 100%;
+        }
+
+        section {
+            padding: 100px 200px;
+        }
+
+        .home {
+            position: relative;
+            width: 100%;
+            min-height: 10vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .home:before {
+            z-index: 777;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .home .content {
+            z-index: 888;
+            color: white;
+            width: 70%;
+            margin-top: 50px;
+        }
+
+        .home .content h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            line-height: 60px;
+            margin-bottom: 40px;
+        }
+
+        .home .content a {
+            background: orangered;
+            padding: 15px 35px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 2px;
+        }
+
+        .home img {
+            z-index: 000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 260%;
+            object-fit: cover;
+        }
+
+        .slider-navigation {
+            z-index: 888;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(80px);
+            margin-bottom: 12px;
+        }
+
+        .slider-navigation .nav-btn {
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+            transition: 0.3s ease;
+        }
+
+        .slider-navigation .nav-btn:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        .slider-navigation .nav-btn:hover {
+            transform: scale();
+        }
+
+        /* ----------------------- */
+    </style>
+    <style>
+        h2 {
+            color: blue;
+            font-size: 50px;
+            text-shadow: 0 1px 0 blue;
+            text-align: center;
+            padding: 70px;
+        }
+
+        h3 {
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            text-shadow: 0 1px 0 coral;
+
+        }
+
+        h3 span {
+            background-color: coral;
+
+        }
+
+        p {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            text-shadow: 0 1px 0 black;
+            padding: 30px;
+        }
+
+        .programs {
+            background-color: #e2e2e2;
+        }
+
+        .programs .boxContainer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 80px;
+        }
+
+        .programs .boxContainer .box {
+            background-color: #fff;
+            text-align: center;
+            padding-bottom: 25px;
+            border-radius: 5px;
+            box-shadow: 0 0 3px 0 #c5c5c5;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .programs .boxContainer .box .cardImage {
+            width: 100%;
+            height: 250px;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .programs .boxContainer .box .cardImage:after {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            filter: grayscale(100%);
+            transition: 0.4s;
+        }
+
+        .programs .boxContainer .box:nth-child(1) .cardImage,
+        .programs .boxContainer .box:nth-child(1) .cardImage:after {
+            background-image: url("assets/imag1.jpg");
+
+        }
+
+        .programs .boxContainer .box:nth-child(2) .cardImage,
+        .programs .boxContainer .box:nth-child(2) .cardImage:after {
+            background-image: url("assets/imag2.jpg");
+
+        }
+
+        .programs .boxContainer .box:nth-child(3) .cardImage,
+        .programs .boxContainer .box:nth-child(3) .cardImage:after {
+            background-image: url("assets/imag3.jpg");
+        }
+
+        .programs .boxContainer .box:nth-child(4) .cardImage,
+        .programs .boxContainer .box:nth-child(4) .cardImage:after {
+            background-image: url("assets/imag4.jpeg");
+        }
+
+        .programs .boxContainer .box:hover .cardImage:after {
+            top: 100%;
+        }
+
+        /* .programs .boxContainer .box .programTitle {
+            font-size: 20px;
+            margin-top: 15px;
+            font-weight: 600;
+        } */
+
+        .programs .boxContainer .box .programTitle:hover {
+            color: orangered;
+        }
+        /* search */
+
+        .box:hover {
+            /* color: orange; */
+            height: 260px;
+            border: 8px solid orange;
+        }
+
+        .box .programTitle:hover {
+            background-color: lightgray;
+        }
+
+        .programs .boxContainer .para {
+            font-size: 25px;
+            font-family: "cambria";
+            font-weight: 600;
+            color: black;
+            margin-top: 10px;
+        }
+
+        @media (min-width: 768px){
+.d-md-block {
+    display: block !important;
+}
+        }
+        /* search */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-s {
+            height: 30px;
+            display: flex;
+            cursor: pointer;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 30px;
+            align-items: center;
+            margin-right: 200px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .box-s:hover .inp-s {
+            width: 100px;
+        }
+
+        .box-s .inp-s {
+            width: 0;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            transition: 0.8s;
+            background: transparent;
+        }
+
+        .box-s a .fa {
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <!-- Carousel -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets\banner-1_page1.jpg" alt="" class="d-block w-100">
+
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size: 2.6rem; position: relative; top: -400px; left: -550px;">Providing marginalised
+                        <br>communities a life of dignity</h5>
+                    <a href="https://www.careindia.org/who-we-are/about-us/" class="btn"
+                        style="border: 3px solid black; background-color: orange; position: relative; top: -400px; left: -550px; font-size: 1.5rem; font-weight: 700;">Know
+                        More</a>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="assets\banner-3_page1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size: 2.6rem; position: relative; top: -400px; left: -550px;"><span
+                            style="color: yellow;">#Reflection</span> <br><span style="color: orangered;">Care India
+                            :</span>A Trusted partner <br>in Combating COVID-19</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets\banner-4_page1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size: 2.6rem; position: relative; top: -400px; left: -550px;"><span
+                            style="color: orange;">Calling</span><span style="color: blue;">CARE India
+                            alumni</span><br><span style="color: orange;">to preserve its legacy</span><br><br><span
+                            style="color: blue;">Come together for your</span><br><span
+                            style="color: orange;">Care...</span></h5>
+                    <a href="https://www.careindia.org/campaign-template/welcome-to-your-alma-mater/" class="btn"
+                        style="border: 3px solid black; background-color: orange; position: relative; top: -400px; left: -550px; font-size: 1.5rem; font-weight: 700;">Know
+                        More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets\banner-5_page1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size: 2.6rem; position: relative; top: -400px; left: -550px;">Help marginalised
+                        girls realise their educational dreams <br>communities a life of dignity</h5>
+                    <a href="https://www.careindia.org/campaign-template/girl-book-vaccine-poverty/" class="btn"
+                        style="border: 3px solid black; background-color: orange; position: relative; top: -400px; left: -550px; font-size: 1.5rem; font-weight: 700;">Donate
+                        Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets\Banner-7_page1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size: 2.6rem; position: relative; top: -400px; left: -550px;"> <span
+                            style="color: orangered;"> Unite for the Greater Good!</span><br>Collaborate to amplify the
+                        impact of your <span style="color: orangered;">CSR efforts</span></h5>
+                    <a href="https://www.careindia.org/make-a-difference/corporates/" class="btn"
+                        style="border: 3px solid black; background-color: orange; position: relative; top: -400px; left: -550px; font-size: 1.5rem; font-weight: 700;">Know
+                        More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets\Banner-6_page1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size: 2.6rem; position: relative; top: -400px; left: -400px;">Inviting <span
+                            style="color: orangered;">former CARE India members</span>to reconnect with fellow
+                        change-makers and amplify their impact beyond borders <br><span>Join our esteemed <span
+                                style="color: orangered;">alumni network</span></span></h5>
+                    <a href="https://www.careindia.org/alumni-registration/" class="btn"
+                        style="border: 3px solid black; background-color: orange; position: relative; top: -400px; left: -550px; font-size: 1.5rem; font-weight: 700;">Know
+                        More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+    <!-- navbar -->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="nav_" class="container-fluid" style="position: relative;top: -390px;"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#nav_").load("nav_without.html");
+        });
+    </script>
+      <!-- NAVBAR end -->
+   
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators" style="background-color: gray;">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner" style="padding: 100px;">
+            <div class="carousel-item active" data-interval="100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="assets\images (1).jpeg" class="d-block w-100" alt="" style="border: 8px solid orangered; border-radius: 100%;
+                            display: inline-block;
+                            height: 100%;
+                            width: 80%;">
+                        </div>
+                        <div class="col-sm">
+                            <h2 style="font-size: 2.5rem;
+                            font-weight: 700;
+                            font-family: sans-serif;">Healthy Mothers, Healthy Future</h2>
+                            <p style=" font-size: 1.4rem;
+                            font-family: sans-serif;">Lend a helping hand in the last-mile delivery of adequate
+                                nutrition to pregnant and
+                                lactating mothers.</p>
+                            <button type="button" style=" background-color: orangered;
+                            font-size: 1.5rem;
+                            height: 40px;
+                            width: 90px;"> <a href="https://www.careindia.org/campaign-template/maternal-health/"
+                                    style="text-decoration: none; color: white;">Donate</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="asstes\images (2).jpeg" class="d-block w-100" alt="" style="border: 8px solid orangered; border-radius: 100%;
+                            display: inline-block;
+                            height: 100%;
+                            width: 80%;">
+                        </div>
+                        <div class="col-sm">
+                            <h2 style="font-size: 2.5rem;
+                            font-weight: 700;
+                            font-family: sans-serif;">Send girls back to school</h2>
+                            <p style=" font-size: 1.4rem;
+                            font-family: sans-serif;">Despite the fact that education is the most powerful weapon in
+                                the battle against
+                                poverty, some girls are denied the opportunity to finish their studies.</p>
+                            <button type="button" style=" background-color: orangered;
+                            font-size: 1.5rem;
+                            height: 40px;
+                            width: 90px;"><a
+                                    href="https://www.careindia.org/campaign-template/send-girls-back-to-school/"
+                                    style="text-decoration: none; color: white;">Donate</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="assets\images (3).jpeg" class="d-block w-100" alt="" style="border: 2px solid orangered; border-radius: 100% ;
+                            display: inline-block;
+                            height: 100%;
+                            width: 80%;">
+                        </div>
+                        <div class="col-sm">
+                            <h2 style="font-size: 2.5rem;
+                            font-weight: 700;
+                            font-family: sans-serif;">A girl with a book is a vaccine against poverty</h2>
+                            <p style=" font-size: 1.4rem;
+                            font-family: sans-serif;">Education is severely impacted due to COVID-19.
+                                The education of more than 247 million school children has
+                                got impacted and most affected have been girls from marginalized communities.</p>
+                            <button type="button" style=" background-color: orangered;
+                            font-size: 1.5rem;
+                            height: 40px;
+                            width: 90px;"><a
+                                    href="https://www.careindia.org/campaign-template/girl-book-vaccine-poverty/"
+                                    style="text-decoration: none; color: white;">Donate</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="assets\images (4).jpeg" class="d-block w-100" alt="" style="border: 8px solid orangered; border-radius: 100%;
+                            display: inline-block;
+                            height: 100%;
+                            width: 80%;">
+                        </div>
+                        <div class="col-sm">
+                            <h2 style="font-size: 2.5rem;
+                            font-weight: 700;
+                            font-family: sans-serif;">Save children from severe malnutrition</h2>
+                            <p style=" font-size: 1.4rem;
+                            font-family: sans-serif;">While India's economy has grown well, the country has the
+                                highest number of stunted children in the world (40.6 million).
+                                India is home to one-third of the global total of stunted children under the age of
+                                five.</p>
+                            <button type="button" style="background-color: orangered;font-size: 1.5rem;height: 40px;
+                            width: 90px;"><a
+                                    href="https://www.careindia.org/campaign-template/save-children-from-severe-malnutrition/"
+                                    style="text-decoration: none; color: white;">Donate</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <h2>CARE India is working for over 70 years to bring</h2>
+    <h3><span> holistic & sustainable changes</span></h3>
+    <p>Our Focus Areas</p>
+
+    <section class="programs" id="programsSection">
+        <div class="container">
+            <div class="boxContainer">
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Health 103.7 million people reached</div>
+                    <div class="para">
+                        Assisting in medical emergencies, reproductive,
+                        maternal, neonatal, child and adolescent healthcare.
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Education 0.32 million people reached</div>
+                    <div class="para">
+                        Imparting 21st century skills like innovation,
+                        problem solving and leadership to adolescents.
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Livelihood 0.88 million people reached</div>
+                    <div class="para">
+                        Developing a professional and entrepreneurial
+                        spirit among marginalised women and girls.
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Disaster Relief 13 million people reached</div>
+                    <div class="para">
+                        Preparing communities for emergency mitigation,
+                        response and recovery.
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------------------------- -->
+
+    <div>
+        <img src="Screenshot 2024-03-29 000912.png" alt="" style="width: 100%;">
+    </div>
+
+    <!-- last -->
+    <br><br>
+    <h1 align="center" style="color: orangered;font-weight: 900;font-size: 60px;">Be a real-life hero!</h1>
+    <br>
+    <h1 align="center" style="color: blue;font-weight: 900; font-size: 50px;">Join us in our mission of impacting 100
+        million people by 2030</h1>
+
+    <div class="text-align-center" align="center">
+        <table class="text-align-center">
+            <tr>
+                <td style="font-size: 25px;font-weight: 600;">2022-2024 &nbsp;&nbsp; </td>
+                <td style="font-size: 25px;font-weight: 600;">2025-2027 &nbsp;&nbsp; </td>
+                <td style="font-size: 25px;font-weight: 600;">2028-2030 </td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 95px;;">30<span style="color: gold">&raquo;</span>&nbsp; </td>
+                <td style="font-size: 95px;">50<span style="color: gold">&raquo;</span>&nbsp; </td>
+                <td style="font-size: 95px;">80+&nbsp; </td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 30px;left: 5px;top: -25px;position: relative;">million</td>
+                <td style="font-size: 30px;left: 5px;top: -25px;position: relative;">million</td>
+                <td style="font-size: 30px;left: 5px;top: -25px;position: relative;">million</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- contact  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="contact_"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#contact_").load("contact_without.html");
+        });
+    </script>
+
+    <!-- contact addition complete -->
+
+    <!-- footer  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="footer_" class="container-fluid"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#footer_").load("footer_without.html");
+        });
+    </script>
+
+    <!-- contact addition complete -->
+</body>
+
+</html>

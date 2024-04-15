@@ -1,0 +1,802 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/c
+ss/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .h2 {
+            display: block;
+            font-size: 2.5rem;
+            /* margin-block-start: 0.83em; */
+            /* margin-block-end: 0.83em; */
+            /* margin-inline-start: 0px; */
+            /* margin-inline-end: 0px; */
+            margin-top: 80px;
+            margin-left: 270px;
+            font-weight: 800;
+            color: #004E7E;
+        }
+
+        .p {
+            margin: 60px;
+            font-size: 2rem;
+            line-height: 60px;
+        }
+
+        img {
+            /* margin: 40px 0 10px 40px; */
+            height: 90%;
+            width: 80%;
+            margin-left: 140px;
+            margin-top: 50px;
+        }
+
+        .major-section {
+            position: relative;
+            padding: 3rem 20rem 0 0;
+            background: url(https://www.careindia.org/wp-content/themes/careindia/images/education/bg.jpg) repeat;
+            color: #fff;
+        }
+
+        section {
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        div {
+            display: block;
+        }
+
+        .major-section .content {
+            padding: 0 2rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col-sm-4 .col-md-4 .col-lg-4 .col-12 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .single-major-item {
+            margin-bottom: 5rem;
+        }
+
+        .col-3 .col-md-3 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col-9 .col-md-9 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .img-fluid {
+            width: 200%;
+            height: 50%;
+        }
+
+        /* img{
+            vertical-align: middle;
+            border-style: none;
+        } */
+        .single-major-item h3 {
+            color: orangered;
+        }
+
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-top: 0;
+            display: block;
+            margin-left: 150px;
+            margin-top: 50px;
+
+        }
+
+        .major-section .single-major-item p {
+            line-height: 1.3;
+        }
+
+        .single-major-item p {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 70px;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            display: block;
+            margin-left: 150px;
+
+        }
+
+        /*------------------------ resources ----------------------------*/
+
+        .programs {
+            background-color: #e2e2e2;
+        }
+
+        .programs .boxContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 100px;
+            margin-top: 50px;
+            /* Adjust the top margin as needed */
+            padding: 0 15px;
+        }
+
+        .programs .boxContainer .box {
+            background-color: #fff;
+            text-align: center;
+            padding-bottom: 25px;
+            border-radius: 5px;
+            box-shadow: 0 0 3px 0 #c5c5c5;
+            position: relative;
+            margin-bottom: 15px;
+            width: 120%;
+        }
+
+        .programs .boxContainer .box .cardImage {
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .programs .boxContainer .box .cardImage:after {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            filter: grayscale(100%);
+            transition: 0.4s;
+        }
+
+        .programs .boxContainer .box:nth-child(1) .cardImage,
+        .programs .boxContainer .box:nth-child(1) .cardImage:after {
+            background-image: url("assets/resource-1.jpg");
+        }
+
+        .programs .boxContainer .box:nth-child(2) .cardImage,
+        .programs .boxContainer .box:nth-child(2) .cardImage:after {
+            background-image: url("assets/resource-2.jpg");
+        }
+
+        .programs .boxContainer .box:nth-child(3) .cardImage,
+        .programs .boxContainer .box:nth-child(3) .cardImage:after {
+            background-image: url("assets/resource-3.jpg");
+        }
+
+        .programs .boxContainer .box:hover .cardImage:after {
+            top: 100%;
+        }
+
+        .programs .boxContainer .box .programTitle {
+            font-size: 20px;
+            margin-top: 19px;
+            font-weight: 800;
+            color: black;
+        }
+
+        .programs .boxContainer .box .programTitle:hover {
+            color: orangered;
+            transition: 0.3s ease;
+        }
+
+        .programs .boxContainer .box .donationCount {
+            font-size: 15px;
+            font-weight: 700;
+            color: #444;
+            margin-top: 10px;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        .programs .boxContainer .box button {
+            position: absolute;
+            left: 50%;
+            background-color: darkblue;
+            color: #fff;
+            transform: translate(-50%);
+            border-radius: 40px;
+            bottom: -15px;
+            padding: 7px 15px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .sectionTitle {
+            font-size: 4rem;
+            text-align: center;
+            padding: 9%;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-shadow: 0 1px 0;
+            transition: 0.3s ease;
+        }
+
+        .sectionTitle:hover {
+            color: orangered;
+            transition: 0.3 ease;
+        }
+
+        /* --------------------------------------------------------------- */
+        .gallery .galleryContainer {
+            column-count: 4;
+            column-gap: 20px;
+        }
+
+        .gallery .galleryContainer .item {
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .gallery .galleryContainer img {
+            width: 100%;
+            display: block;
+            transition: 0.4s;
+        }
+
+        .gallery .galleryContainer .title {
+            position: absolute;
+            background-color: gray;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            opacity: 0;
+            z-index: 1;
+            transition: 0.4s;
+        }
+
+        .gallery .galleryContainer .item:hover .title {
+            opacity: 1;
+        }
+
+        .gallery .galleryContainer .item:hover img {
+            transform: scale(1.2);
+        }
+
+        .info {
+            width: 130%;
+            margin-left: -150px;
+            height: 80%;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .theme-bg {
+            background-color: orange;
+            color: #fff;
+            /* text-align: c/enter; */
+            padding: 2rem 4rem;
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.9rem;
+            font-weight: 500; 
+        }
+
+        p {
+            font-size: 1.5rem;
+            
+        }
+
+        .col-12 .col-md-6 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .banner{
+            background: url(assets/education-banner.jpg);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+ 
+
+ 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .box-s{
+            height: 30px;
+            display: flex;
+            cursor: pointer;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 30px;
+            align-items: center;
+            margin-right: 200px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .box-s:hover input{
+            width: 400px;
+        }
+        .box-s input{
+            width: 0;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            transition: 0.8s;
+            background: transparent;
+        }
+        .box-s a .fas{
+            /* color: aqua; */
+            font-size: 18px;
+        }*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+    </style>
+</head>
+
+<body>
+     <!-- banner image -->
+     <div class="banner">
+       
+     </div>
+    
+     <nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="assets/CI4.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 1 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        WHO WE ARE
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                                Work</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                                Team</a></li>
+                    </ul>
+                </li>
+    
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        OUR WORK
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('education.html')">Education</a></li>
+    
+                    </ul>
+                </li>
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        ACHIEVEMENTS
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                        <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                                Partners</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html"
+                                onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+    
+                    <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        MAKE A DIFFERENCE
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item list"
+                                href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('corporates.html')">Corporates</a></li>
+                    </ul>
+                </li>
+    
+    
+            </ul>
+    
+            <div class="box-s">
+                <input type="text" class="inp-s" placeholder="Search" name="" id="">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+       
+       
+        <!--div  -->
+        <div style="position: relative;">
+            <div class="mx-auto" style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Our Work ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Education</a>
+            </div>
+       
+            <div class="mx-auto" style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+                <div class="progress" style="height: 150px;z-index: -1;" >
+                    <div  class="progress-bar progress-bar-striped " role="progressbar" style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">Empowering Girl Child Through Education</h1>
+            </div>
+        </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="back-img"
+        style="background-image:url(https://www.careindia.org/wp-content/uploads/2021/09/health-banner.jpg)">
+
+    </div>
+    <table class="table">
+        <tr>
+            <td>
+                <h2 class="h2">Empowering marginalized girls through quality education and leadership skills</h2>
+            </td>
+            <td>
+                <p class="p">
+                    CARE India's 'Girl Education Program' (GEP) has been working for 25 years to ensure quality
+                    elementary education for children, especially girls and those from marginalized communities, to help
+                    them become the leaders and changemakers of the future. We see education as an imperative tool for
+                    girls to realize their maximum potential by gaining crucial skills and dispositions that set them on
+                    the path of social and economic empowerment.
+
+                    Our girls education programmes and projects in India work through building learning ecosystems that
+                    are inclusive, gender conscious, and safe for all. We work with various stakeholders to champion the
+                    importance of girl child education and mobilize resources through online donations in India and
+                    other strategies. Our education initiatives work in accordance with the Right to Education Act
+                    (2009) and National Education Policy 2020
+                </p>
+            </td>
+        </tr>
+    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 text-center">
+                <div class="theme-bg" >
+                    <h3 style="text-align: center;">Strong Foundation</h3>
+                    <p>Align with FLN Mission and Universalization of Early Childhood Care Education objective of NEP
+                    </p>
+                </div>
+            </div>
+                <p>
+                    <strong>Goal :</strong>
+                    Build pathways that bring student to school and ensure students learn at schools
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <div class="theme-bg">
+                    <h3>Innovators and Change Maker</h3>
+                    <p>Align with NEPs objective of developing 21 <sup>st </sup>Century skills in adolescents</p>
+                </div>
+            </div>
+            <p>
+                <strong>Goal :</strong>
+                Support adolescents to develop skills required for innovation, problem solving and leadership
+            </p>
+
+        </div>
+    </div>
+    <div class="container">
+        <img src="assets/Screenshot 2024-03-27 143342.png" class="info" alt="">
+    </div>
+
+    <section class="major-section">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <!-- left -->
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-12">
+                        <div class="left-services" style="margin-left: -200px !important;">
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/icon1.webp" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>3590+</h3>
+                                            <p>schools across 7 states benefitted through 15 projects</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/edu.svg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>214,894</h3>
+                                            <p>women and girls reached out with the specific focus for ensuring gender equality and empowerment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- middle -->
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-12">
+                        <div class="services-img">
+                            <img src="assets/edu_girl.png" class="img-fluid" style="height: 90%;" alt="">
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-12">
+                        <div class="right-services" style="margin-right: -500px !important;">
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/edu1.svg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>124,879</h3>
+                                            <p>children, including 71,554 girls reached out with quality education</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/edu2.svg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>82 girls</h3>
+                                            <p>likely to discontinue education were helped in pursuing safe and secure education by the Saksham project</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------- Resources ------------------------>
+    <section class="programs" id="programsSection">
+        <div class="container">
+            <h2 class="sectionTitle">Resources</h2>
+            <div class="boxContainer">
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">The Project</div>
+                    <div class="donationCount">
+                        Start Early: Read in Time is a CARE India Solution for Sustainable Development…
+                    </div>
+                    <button>Read More</button>
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Girls, Education</div>
+                    <div class="donationCount">
+                        The Right to Education Act in India was a major turning point for school education…
+                    </div>
+                    <button>Read More</button>
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">AWWs and Good Practice</div>
+                    <div class="donationCount">
+                        The early years a life for a child are considered crucial and critical…
+                    </div>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------gallery----------------------------------------- -->
+
+
+    <section class="gallery" id="gallerySection">
+        <div class="container">
+            <div class="sectionTitle">Gallery</div>
+
+            <div class="galleryContainer">
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-1.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-2.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-3.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-4.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-5.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-6.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-7.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/educa-8.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- contact  -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <div id="contact_"></div>
+  <script>
+      // Load the contact from an external HTML file
+      $(function () {
+          $("#contact_").load("contact_without.html");
+      });
+  </script>   
+
+  <!-- contact addition complete -->
+
+  
+       <!-- footer  -->
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+       <div id="footer_" class="container-fluid"></div>
+       <script>
+           // Load the contact from an external HTML file
+           $(function () {
+               $("#footer_").load("footer_without.html");
+           });
+       </script>
+   
+       <!-- contact addition complete -->
+
+</body>
+
+</html>

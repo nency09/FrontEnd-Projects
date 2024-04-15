@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-vB+uYZ2aI/0foh2fkoqrrt0A7iAT5xCgQ3INjv0XzIzXsEsnHjT1uLzmu6KzY0Ydzq4L2blXWiW2qT+rujHyrzw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .container {
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+            /* Added maximum width for better responsiveness */
+        }
+
+        .row {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        h2 {
+            font-size: 2.7rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .middle-section {
+    padding: 5rem 0;
+    position: relative;
+    color: #fff;
+}
+
+.section-full {
+    background: url(women.jpg);
+    /* background-size: cover;  */
+    background-position: center;
+    position: relative;
+}
+
+/* .back-block.background-image {
+    background-size: cover;
+    background-position: 50% 0;
+} */
+
+/* .back-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); 
+} */
+
+.middle-section .container {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    /* width: 100%; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.section-full p span {
+    color: #FFC107; /* Changed color of spans */
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.core {
+    width: 30%;
+    margin: -100px auto -260px auto;
+    transform: rotate(90deg) !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Add this line to make images behave correctly */
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/* 
+.value-img .heading {
+    position: relative;
+    z-index: 99;
+    margin-top: -8rem;
+    display: inline-block;
+    color: #fff;
+} */
+
+.value-item {
+    position: relative;
+}
+
+.value-item ul {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+/* Center the heading */
+.value-img .core .heading {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    margin-top: -20px;
+    color: #fff;
+}
+/* Remove list style */
+.value-item ul {
+    list-style-type: none;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0; /* Add this line to remove default padding */
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+ul {
+    padding: 0;
+}
+
+.value-item ul li .icon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 auto 1rem;
+    background-color: #f0eceb;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center; /* Add this line to vertically center the icon */
+    justify-content: center; /* Add this line to horizontally center the icon */
+}
+
+.core-value-item ul li {
+    text-align: center;
+    list-style-type: none;
+    width: 25%;
+    padding: 0 10px;
+}
+h5{
+    color: blue;
+    font-size: 2.5rem;
+}
+.fix{
+    margin-top: -150px;
+    margin-left: 100px;
+}
+
+.banner{
+            background: url(assets/about-banner.jpg);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+ 
+
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+    </style>
+</head>
+
+<body>
+     <!-- banner image -->
+     <div class="banner">
+       
+     </div>
+
+     <nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="assets\CI4.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 1 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        WHO WE ARE
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                                Work</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                                Team</a></li>
+                    </ul>
+                </li>
+    
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        OUR WORK
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('education.html')">Education</a></li>
+    
+                    </ul>
+                </li>
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        ACHIEVEMENTS
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                        <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                                Partners</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html"
+                                onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+    
+                    <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        MAKE A DIFFERENCE
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item list"
+                                href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('corporates.html')">Corporates</a></li>
+                    </ul>
+                </li>
+    
+    
+            </ul>
+    
+            <div class="box-s">
+                <input type="text" class="inp-s" placeholder="Search" name="" id="">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+       
+       
+        <!--div  -->
+        <div style="position: relative;">
+            <div class="mx-auto" style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Who we are ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">About Us</a>
+            </div>
+       
+            <div class="mx-auto" style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+                <div class="progress" style="height: 150px;z-index: -1;" >
+                    <div  class="progress-bar progress-bar-striped " role="progressbar" style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">About Us</h1>
+            </div>
+        </div>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2>Empowered women and girls can lift their entire families and communities out of poverty.</h2>
+
+            </div>
+            <div class="col-6">
+                <p>We are a not-for-profit organisation that builds capacity of communities to ensure empowerment for
+                    marginalised women and girls. Our sustainable and holistic interventions
+                    in Health, Livelihood, Education and Disaster Relief & Resilience, provide innovative solutions to
+                    deep-rooted development problems.
+                    <br>
+                    Along with access to the international confederation of expertise, we integrate internal knowledge
+                    and strong network of partnerships to deliver outcomes at scale to varied stakeholders.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="middle-section section-full">
+        <div class="back-block background-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            CARE India is a part of the CARE International Confederation, which is helping millions of people in living a life of dignity. We have a presence in over 100 countries.
+                        </p>
+                        <p>
+                            We have been contributing to India's explosive growth for 75 years, starting from the time when it was a newly formed nation, till today when it is among the world's fastest developing economies.
+                        </p>
+                        <p>
+                            In 2021-22, we impacted the lives of more than 
+                            <span> 84.2 million </span>people, through <span> 90 projects </span>, carried across <span>21 states.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------------------------------- -->
+
+    <section class="section-fully values-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="value-img">
+                        <div class="core">
+                            <img src="assets/cirle-motiff.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="heading">
+                            <h2>Our
+                                <br>
+                                Core Values
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="value-item">
+                                    <ul class="d-flex justify-content-between">
+                                        <li class="fix">
+                                            <div class="icon">
+                                                <img src="assets\respect-icon.svg" alt="" class="img-fluid"> 
+                                            </div>
+                                            <h5>Respect</h5>
+                                            <p>Upholding the dignity of each individual</p>
+                                        </li>
+                                        <li class="fix">
+                                            <div class="icon" >
+                                                <img src="assets\integrity-icon.svg" alt="" class="img-fluid"> 
+                                            </div>
+                                            <h5>Integrity</h5>
+                                            <p>Adhering to an ethical code of conduct in all actions</p>
+                                        </li>
+                                        <li class="fix">
+                                            <div class="icon">
+                                                <img src="assets\commitment-icon.svg" alt="" class="img-fluid"> 
+                                            </div>
+                                            <h5>Commitment</h5>
+                                                
+                                            <p>Fulfilling our duties and social responsibilities</p>
+                                        </li>
+                                        <li class="fix">
+                                            <div class="icon">
+                                                <img src="assets\excellence-icon.svg" alt="" class="img-fluid"> 
+                                            </div>
+                                            <h5>Excellence</h5>
+                                            <p>Setting high performance standards and being accountable to them</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- contact  -->
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <div id="contact_"></div>
+      <script>
+          // Load the contact from an external HTML file
+          $(function () {
+              $("#contact_").load("contact_without.html");
+          });
+      </script>   
+  
+      <!-- contact addition complete -->
+
+      
+       <!-- footer  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="footer_" class="container-fluid"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#footer_").load("footer_without.html");
+        });
+    </script>
+
+    <!-- contact addition complete -->
+</body>
+
+</html>

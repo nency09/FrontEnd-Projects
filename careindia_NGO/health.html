@@ -1,0 +1,690 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/c
+ss/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+    padding: 0;
+        }
+
+        .h2 {
+            display: block;
+            font-size: 2.5rem;
+          
+            margin-top: 80px;
+            margin-left: 270px;
+            font-weight: 800;
+            color: #004E7E;
+        }
+        .p{
+            margin: 60px;
+            font-size: 2rem;
+            line-height: 60px;
+        }
+        img{
+            /* margin: 40px 0 10px 40px; */
+            height: 90%;
+            width: 80%;
+            margin-left: 140px;
+            margin-top: 50px;
+        }
+        .major-section{
+            position: relative;
+            padding: 3rem 0 0 0;
+            background: url(https://www.careindia.org/wp-content/themes/careindia/images/education/bg.jpg) repeat;
+            color: #fff;
+        }
+        section{
+            display: block;
+        }
+        .container{
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        div{
+            display: block;
+        }
+        .major-section .content{
+            padding: 0 2rem;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .col-sm-4 .col-md-4 .col-lg-4 .col-12{
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .single-major-item{
+            margin-bottom: 5rem;
+        }
+        .col-3 .col-md-3{
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .col-9 .col-md-9{
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .img-fluid{
+            width: 200%;
+            height: 50%;
+        }
+        /* img{
+            vertical-align: middle;
+            border-style: none;
+        } */
+        .single-major-item h3{
+            color: orangered;
+        }
+        h3{
+            font-size: 3rem;
+            margin-bottom: 5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-top: 0;
+            display: block;
+            margin-left: 150px;
+            margin-top: 50px;
+            
+        }
+        .major-section .single-major-item p{
+            line-height: 1.3;
+        }
+        .single-major-item p{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 70px;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            display: block;
+            margin-left:150px;
+            
+        }
+ /*------------------------ resources ----------------------------*/
+
+    .programs {
+    background-color: #e2e2e2;
+}
+
+.programs .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+    margin-top: 50px; /* Adjust the top margin as needed */
+padding: 0 15px;
+} 
+
+.programs .boxContainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+    width: 120%;
+}
+
+.programs .boxContainer .box .cardImage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    overflow: hidden;
+    border-radius:5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage:after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+/* .box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+} */
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after
+{
+background-image: url("assets/resources1.jpg");
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after
+{
+background-image: url("assets/resources2.jpg");
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after
+{
+background-image: url("assets/resources3.jpg");
+}
+
+.programs .boxContainer .box:hover .cardImage:after {
+    top: 100%;
+}
+
+.programs .boxContainer .box .programTitle{
+font-size: 20px;
+margin-top: 19px;
+font-weight: 800;
+color: black;
+}
+.programs .boxContainer .box .programTitle:hover{
+    color: orangered;
+    transition: 0.3s ease;
+}
+
+.programs .boxContainer .box .donationCount {
+    font-size: 15px;
+    font-weight: 700;
+    color: #444;
+    margin-top: 10px;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+.programs .boxContainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: darkblue;
+    color: #fff;
+    transform: translate(-50%);
+    border-radius: 40px;
+    bottom:-15px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+    .sectionTitle{
+        font-size: 4rem;
+        text-align: center;
+        padding: 9%;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0;
+        transition: 0.3s ease;
+    }
+
+    .sectionTitle:hover{
+        color:orangered;
+        transition: 0.3 ease;
+    }
+/* --------------------------------------------------------------- */
+.gallery .galleryContainer{
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .galleryContainer img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: gray;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+}
+
+
+
+.banner{
+            background: url(assets/health-banner.jpg);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+ 
+
+ 
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- banner image -->
+    <div class="banner">
+       
+    </div>
+    <nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="assets/CI4.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 1 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        WHO WE ARE
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                                Work</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                                Team</a></li>
+                    </ul>
+                </li>
+    
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        OUR WORK
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('education.html')">Education</a></li>
+    
+                    </ul>
+                </li>
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        ACHIEVEMENTS
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                        <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                                Partners</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html"
+                                onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+    
+                    <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        MAKE A DIFFERENCE
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item list"
+                                href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('corporates.html')">Corporates</a></li>
+                    </ul>
+                </li>
+    
+    
+            </ul>
+    
+            <div class="box-s">
+                <input type="text" class="inp-s" placeholder="Search" name="" id="">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+       
+       
+        <!--div  -->
+        <div style="position: relative;">
+            <div class="mx-auto" style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Our Work ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Health</a>
+            </div>
+       
+            <div class="mx-auto" style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+                <div class="progress" style="height: 150px;z-index: -1;" >
+                    <div  class="progress-bar progress-bar-striped " role="progressbar" style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">Healthy Families, Healthy Communities</h1>
+            </div>
+        </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="back-img" style="background-image:url(https://www.careindia.org/wp-content/uploads/2021/09/health-banner.jpg)">
+
+    </div>
+    <table class="table">
+        <tr>
+            <td>
+                <h2 class="h2">Pioneering efforts to address healthcare needs in poor and marginalised communities</h2>
+            </td>
+            <td>
+                <p class="p">
+                    CARE India's Health interventions work to improve the access to quality healthcare services for the
+                    poor and marginalised communities. By identifying the root causes of healthcare challenges, we work
+                    at the individual, community, and systemic levels to develop innovative solutions and help implement
+                    quality healthcare services. The ambit of our work includes improving of maternal and reproductive
+                    health, child health and nutrition, and early identification and treatment of communicable diseases.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <img  src="assets/health-infograph.png" width="99%" height="99%">
+
+    </table>
+
+    <section class="major-section">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <!-- left -->
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-12">
+                        <div class="left-services" style="margin-left: -200px !important;">
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/icon1.webp" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>51,533,110</h3>
+                                            <p>individuals reached directly through health interventions 
+                                                across 9 states, out of which 43,358,023 are women and girls.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/icon2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>51,535,110</h3>
+                                            <p>CARE India provided access to quality healthcare to 51,535,110 individuals, including 43,358,023 women and girls, as its contribution towards SDG 3.                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+
+                    <!-- middle -->
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-12">
+                        <div class="services-img">
+                            <img src="assets/images (5).jpeg" class="img-fluid" style="height: 90%;" alt="">
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-12">
+                        <div class="right-services" style="margin-right: -500px !important;">
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/icon3jpg.svg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>8,953,380</h3>
+                                            <p>Towards SDG 2, providing adequate food and nutrition, CARE India supported 8,953,380 individuals including 4,303,729 women and girls.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-major-item">
+                                <div class="row">
+                                    <div class="col-3 col-md-3">
+                                        <div class="major-icon">
+                                            <img src="assets/icon4.svg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-9">
+                                        <div class="major-content">
+                                            <h3>129,868</h3>
+                                            <p>individuals reached under SDG 6 to secure the availability of water and sanitation for all.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!------------------------------- Resources ------------------------>
+    <section class="programs" id="programsSection">
+        <div class="container" style="width: 100%;padding-right: 15px; padding-left: 15px;margin-right: auto;margin-left: auto;">
+            <h2 class="sectionTitle">Resources</h2>
+            <div class="boxContainer">
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Making Magic in Health Facilities</div>
+                    <div class="donationCount">
+                        Despite some progress, Bihar has some of the highest rates of maternal and newborn death in all of India…
+                    </div>
+                    <button>Read More</button>
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">A Model for Mentorship</div>
+                    <div class="donationCount">
+                        Nurses and Auxiliary Nurse Midwives (ANMs) are female health workers who provide basic health services,…
+                    </div>
+                    <button>Read More</button>
+                </div>
+
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Encouraging Sustainable Family Planning Practices</div>
+                    <div class="donationCount">
+                        The Zero and Low Parity Pilot (ZLPP) is a timely intervention modelled around findings from CARE’S exploratory studies…
+                    </div>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------gallery----------------------------------------- -->
+
+
+    <section class="gallery" id="gallerySection">
+        <div class="container">
+            <div class="sectionTitle">Gallery</div>
+
+            <div class="galleryContainer">
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth1.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth2.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth3.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth4.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth4.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth5.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth6.jpeg" alt="">
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="assets/helth7.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+       <!-- contact  -->
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+       <div id="contact_"></div>
+       <script>
+           // Load the contact from an external HTML file
+           $(function () {
+               $("#contact_").load("contact_without.html");
+           });
+       </script>   
+   
+       <!-- contact addition complete -->
+       
+       <!-- footer  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="footer_" class="container-fluid"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#footer_").load("footer_without.html");
+        });
+    </script>
+
+    <!-- contact addition complete -->
+</body>
+
+</html>

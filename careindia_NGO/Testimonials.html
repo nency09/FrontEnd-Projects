@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        h2{
+            color:darkblue;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 25px;
+            line-height: 2.6rem;
+        }
+        button{
+            color: white;
+            background-color:orangered;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        /* .btn{
+            color: white;
+            background-color: darkblue;  
+        } */
+
+        .banner{
+            background: url(assets/Testimonials_banner.png);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+ 
+
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+    </style>
+
+</head>
+
+<body>
+     <!-- banner image -->
+     <div class="banner">
+       
+     </div>
+ 
+     <nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="assets/CI4.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="position: relative;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 1 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        WHO WE ARE
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                                Work</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                                Team</a></li>
+                    </ul>
+                </li>
+    
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        OUR WORK
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('education.html')">Education</a></li>
+    
+                    </ul>
+                </li>
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        ACHIEVEMENTS
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                        <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                                Partners</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html"
+                                onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+    
+                    <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        MAKE A DIFFERENCE
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item list"
+                                href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('corporates.html')">Corporates</a></li>
+                    </ul>
+                </li>
+    
+    
+            </ul>
+    
+            <div class="box-s">
+                <input type="text" class="inp-s" placeholder="Search" name="" id="">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+       
+        <!--div  -->
+        <div style="position: relative;">
+            <div class="mx-auto" style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Achievements ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Testimonials</a>
+            </div>
+       
+            <div class="mx-auto" style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+                <div class="progress" style="height: 150px;z-index: -1;" >
+                    <div  class="progress-bar progress-bar-striped " role="progressbar" style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">Testimonials</h1>
+            </div>
+        </div>
+  <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2020/12/1.png" alt="" style="border: 8px solid orangered; border-radius: 100%;height: 350px;">
+            </div>
+            <div class="col-sm">
+                <h2>Mrs. Samta</h2>
+                <p>Khushi project implemented by CARE India in 3 blocks of Chittorgarh has positively impacted lives of
+                    marginalized community. CARE India has done notable work in improving health & nutrition of children
+                    by implementing innovative programs like Community Based Management of Acute Malnutrition in 3
+                    blocks of Chittorgarh. We look forward to work in ...
+                </p>
+                <button type="button">Read More</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2020/12/2.png" alt="" style="border: 8px solid orangered; border-radius: 100%; height: 350px;">
+            </div>
+            <div class="col-sm">
+                <h2>Mr. C.P. Goswami</h2>
+                <p>Under CARE India's Community Based Management of Acute Malnutrition program implemented to address
+                    malnutrition frontline workers did a door to door survey of children and anthropometric measurements
+                    of 0-5 years of children. Total 395 children were identified and enrolled in the program. After the
+                    treatment 82% of children moved out from SAM su...
+                </p>
+                <button type="button">Read More</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2020/09/3.png" alt="" style="border: 8px solid orangered; border-radius: 100%; height: 350px;">
+            </div>
+            <div class="col-sm">
+                <h2>Sridhar NE</h2>
+                <p>CARE India and Titan co-created the Kanya Sampoorna project being implemented in
+                    Katturmanarkovil, Cuddalore district. The said project, was initiated three years back, focuses
+                    on Health, Education and Livelihoods with a special focus on the Girl Child. The project reach
+                    is over 75,000 women and children in five years. CARE India was one of the few...
+                </p>
+                <button type="button">Read More</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2018/07/4.png" alt="" style="border: 8px solid orangered; border-radius: 100%; height: 350px;">
+            </div>
+            <div class="col-sm">
+                <h2>Vijay Kumar Singh</h2>
+                <p>Vijay Kumar Singh
+                    PI Foundation which is a Corporate Social Responsibility wing of PI Industries Limited has
+                    been working with CARE India on Women Empowerment programme aimed at “ Entrepreneurship
+                    Development and Skill Enhancement” of underprivileged women of the self-help groups by
+                    access to finances, resources, opportunities and strengthening of traditional li...
+                </p>
+                <button type="button">Read More</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="https://www.careindia.org/wp-content/uploads/2017/05/5.png" alt="" style="border: 8px solid orangered; border-radius: 100%; height: 350px;">
+            </div>
+            <div class="col-sm">
+                <h2>
+                    Saraswati Rayar</h2>
+                <p>'Although a couple of oganisations came to distribute relief material, we were not able
+                    to access it as we were left behind due to old age. CARE India identified us and came to
+                    our doorstep to distribure relief kits. We felt that there is more than enough for us to
+                    survive in this difficult situation and were extremely happy that someone thought ab...
+                </p>
+                <button type="button">Read More</button>
+            </div>
+        </div>
+<div align="center" style="padding: 100px; margin-left: 160px;">
+        <button type="button" style="background-color: darkblue; font-size: 2rem; font-weight: 700;">Show More +</button>
+    </div>
+    </div>
+    <hr style="border: 3px solid blue;margin-top: -50px;">
+
+       <!-- contact  -->
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+       <div id="contact_"></div>
+       <script>
+           // Load the contact from an external HTML file
+           $(function () {
+               $("#contact_").load("contact_without.html");
+           });
+       </script>   
+   
+       <!-- contact addition complete -->
+
+       
+       <!-- footer  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="footer_" class="container-fluid"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#footer_").load("footer_without.html");
+        });
+    </script>
+
+    <!-- contact addition complete -->
+</body>
+
+</html>

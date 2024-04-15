@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-vB+uYZ2aI/0foh2fkoqrrt0A7iAT5xCgQ3INjv0XzIzXsEsnHjT1uLzmu6KzY0Ydzq4L2blXWiW2qT+rujHyrzw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Override default Bootstrap active link color */
+        .nav-tabs .nav-link.active {
+            color: black !important;
+        }
+        
+        /* Change color on hover */
+        .nav-tabs .nav-link:hover {
+            color: darkblue !important;
+        }
+
+        section{
+    padding: 100px 0;
+    position: relative;
+}
+        /* copied */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col-12 .col-sm-12 .col-md-6 .col-lg-6 {
+            /* position: relative; */
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+         .single-prof {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .single-prof .row.d-flex.align-items-center {
+            align-items: flex-start !important;
+        }
+
+        .d-flex {
+            display: flex !important;
+        }
+/*  */
+        .abc{
+            display: inline;
+        }
+
+        .col-12 .col-sm-12 .col-md-5 .col-lg-5 {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col-12 .col-sm-12 .col-md-7 .col-lg-7 {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+         .single-prof .single-pic {
+            border: 3px solid #e4701d;
+            border-radius: 50% !important;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        /* .team-members-section .single-prof .single-pic img {
+            filter: grayscale(100%);
+            height: 100%;
+            object-fit: cover;
+        } */
+
+        .img-fluid {
+            max-width: 100%;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+            overflow: clip;
+        }
+
+.single-prof .single-profile .profile-name {
+            font-size: 1.3rem;
+            color: #004e7e;
+        }
+
+        h3 {
+            margin-bottom: .5rem;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.2;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .team-members-section .single-prof .single-profile .position-name {
+            font-size: 15px;
+            line-height: 21px;
+            font-family: Merriweather, serif;
+        }
+
+        h5 {
+            margin-bottom: .5rem;
+            font-weight: 500;
+        }
+
+        .team-members-section .single-prof .single-profile ul.profile-social {
+            margin: 10px 0 20px 0;
+            display: inline-block;
+        }
+
+        .team-members-section .single-prof .single-profile ul.profile-social li.linkedin {
+            background: #0e76a8;
+            color: #fff;
+        }
+
+        .team-members-section .single-prof .single-profile ul.profile-social li:last-child {
+            margin-right: 5px;
+        }
+
+        .team-members-section .single-prof .single-profilec ul.profile-social li {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-block;
+            list-style-type: none;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .team-members-section .single-prof .single-profile ul.profile-social li a {
+            color: #fff;
+            display: block;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        .fab {
+            display: inline-block;
+            font: normal normal normal 14px / 1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+        }
+
+        .go-profile {
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            border-radius: 50%;
+            background: #e4701d;
+            display: inline-block;
+            color: #fff;
+            line-height: 35px;
+        }
+        h5{
+            font-size: 1.5rem !important;
+        }
+
+
+        .banner{
+            background: url(assets/Corporate_Banner-.jpg);
+            height: 650px;
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+ 
+
+ 
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} */
+
+.box-s{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    margin-right: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box-s:hover .inp-s{
+    width: 200px;
+}
+.box-s .inp-s{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box-s a .fa{
+    /* color: aqua; */
+    font-size: 18px;
+}
+.myHover:hover {
+    background-color:lightgray !important;
+    color: orangered !important;
+    height: 70px;
+    transition: 0.3s;
+}
+.list{
+font-size: 1.9rem;
+    font-weight: 700 !important;
+    line-height: 2rem;
+    line-height: 2.9rem;
+    color:rgb(0, 1, 14) !important;
+}
+
+    </style>
+</head>
+<body>
+    <!-- banner image -->
+    <div class="banner">
+       
+    </div>
+    <nav style="position: relative;top: -600px; padding-left: 150px;" class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="assets/CI4.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 1 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="padding-left: 550px;">
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        WHO WE ARE
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  list" onclick="window.open('aboutus.html')" href="#">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item list" href="#" onclick="window.open('whereWeWork.html')">Where We
+                                Work</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html" onclick="window.open('ourTeam.html')">Our
+                                Team</a></li>
+                    </ul>
+                </li>
+    
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown"aria-expanded="false" style="font-weight:600; font-size: 1.7rem !important;color: white;">
+                        OUR WORK
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('health.html')" href="#">Health</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('education.html')">Education</a></li>
+    
+                    </ul>
+                </li>
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        ACHIEVEMENTS
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item  list" onclick="window.open('impact.html')" href="#">Impact</a></li>
+                        <li><a class="dropdown-item  list" href="#" onclick="window.open('Ourpartners.html')">Our
+                                Partners</a></li>
+                        <li><a class="dropdown-item  list" href="#shop1.html"
+                                onclick="window.open('Testimonials.html')">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+    
+                    <a class="nav-link dropdown-toggle mx-2 fs-5 myHover" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-weight:600; font-size: 1.7rem !important;color: white;" aria-expanded="false">
+                        MAKE A DIFFERENCE
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item list"
+                                href="http://127.0.0.1:5501/Individuals.html">Individuals</a></li>
+                        <li><a class="dropdown-item  list" href="#"
+                                onclick="window.open('corporates.html')">Corporates</a></li>
+                    </ul>
+                </li>
+    
+    
+            </ul>
+    
+            <div class="box-s">
+                <input type="text" class="inp-s" placeholder="Search" name="" id="">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+       
+       
+        <!--div  -->
+        <div style="position: relative;">
+            <div class="mx-auto" style="border-radius: 5px; background-color: black; height: 50px; position: relative; top: -220px; opacity: 0.5; width: 1350px;">
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Home ></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Make a Difference></a>
+                <a href="" style="position: relative;font-weight: 500;font-size: 25px;left: 65px;top: 5px; text-decoration: none;color: white;">Corporates</a>
+            </div>
+       
+            <div class="mx-auto" style="background-color: lightgrey; height: 150px; position: relative; top: -222px;width: 1350px;">
+                <div class="progress" style="height: 150px;z-index: -1;" >
+                    <div  class="progress-bar progress-bar-striped " role="progressbar" style="width: 100%; background-color: rgb(230, 230, 230);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h1 class="font-weight-bold" style="position: relative;top: -120px; font-size: 65px; left: 50px;">Corporates</h1>
+            </div>
+        </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <ul class="nav nav-tabs" style="position: relative; top: 25px;" >
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#board" style="color: black; font-size: 2rem; font-weight: 400;margin-left:3px;" >Board Members</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Management" style="color: black; font-size: 2rem; font-weight: 400; padding-left:20px;" >Management Team</a></li>
+      </ul>
+      
+      <div class="tab-content container">
+        <div id="board" class="tab-pane active show fade"> 
+          <p style="font-size: 1.4rem; font-weight: 400; font-family:sans-serif; top: 45px; position: relative;">The Board consists of a group of highly accomplished professionals from public, private and
+            development sector who share a common passion for empowering women and girls to alleviate
+            poverty and reduce social exclusion. The board chaired by Mr. Mathew Cherian provides governance
+            and leadership for enabling CARE India accomplish its mission. The board is actively engaged in
+            governing CARE as a lead development institution in the country working in close collaboration
+            with other development partners.</p>
+
+            <!-- board section code -->
+            <div class="row" style="position: relative; top: 90px;">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="single-prof">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                <div class="single-pic"  >
+                                    <img src="https://www.careindia.org/wp-content/uploads/2021/11/Mathew.jpg"
+                                        class="img-fluid" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                <div class="single-profile">
+                                    <h3 class="profile-name">Mathew Cherian</h3>
+                                    <h5 class="position-name">Board Chairperson</h5>
+                                    <ul class="profile-social">
+                                        <!-- href="https://www.linkedin.com/in/mathew-cherian-70473615/?originalSubdomain=in" -->
+                                        <li class="linkedin abc">
+                                            <a href="https://www.linkedin.com/in/mathew-cherian-70473615/?originalSubdomain=in"
+                                                target="_blank">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a style="position: relative; left:57px; top: -45px;" href="https://www.careindia.org/our-member/mathew-cherian/"
+                                        class="go-profile rounded-image">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="section-full team-members-section" style="background-color: rgb(232, 231, 231);">
+                    <div class="container">
+                        <h2>Board Members</h2>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="single-prof">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                            <div class="single-pic">
+                                                <img src="https://www.careindia.org/wp-content/uploads/2021/11/ragini-atal.jpg"
+                                                    class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                            <div class="single-profile">
+                                                <h3 class="profile-name">Ragini Atal</h3>
+                                                <h5 class="position-name">Director, Deutsche Bank.
+                                                </h5>
+                                                <ul class="profile-social">
+                                                    <!-- dgierijnv -->
+                                                    <li class="linkedin">
+                                                        <a href="https://www.linkedin.com/in/ragini-atal-30a090b4/"
+                                                            target="_blank">
+                                                            <i class="fab fa-linkedin"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <a href="https://www.careindia.org/our-member/ragini-atal/"
+                                                    class="go-profile">
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="single-prof">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                            <div class="single-pic">
+                                                <img src="https://www.careindia.org/wp-content/uploads/2021/11/Vivek-Bhandari.jpg"
+                                                    class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                            <div class="single-profile">
+                                                <h3 class="profile-name">Vivek Bhandari</h3>
+                                                <h5 class="position-name">Visiting Professor
+                                                </h5>
+                                                <ul class="profile-social"></ul>
+                                                <a href="https://www.careindia.org/our-member/vivek-bhandari/"
+                                                    class="go-profile">
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="single-prof">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                            <div class="single-pic">
+                                                <img src="https://www.careindia.org/wp-content/uploads/2021/11/Ranjan.jpg"
+                                                    class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                            <div class="single-profile">
+                                                <h3 class="profile-name">Ranjan Dwivedi</h3>
+                                                <h5 class="position-name">National Advisory Committee,
+                                                    National Disaster Managementirector, Deutsche Bank.
+                                                </h5>
+                                                <ul class="profile-social"></ul>
+                                                <a href="https://www.careindia.org/our-member/ranjan-dwivedi/"
+                                                    class="go-profile">
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6" >
+                                <div class="single-prof">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                            <div class="single-pic">
+                                                <img src="https://www.careindia.org/wp-content/uploads/2021/11/deepak.jpg"
+                                                    class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                            <div class="single-profile">
+                                                <h3 class="profile-name">Deepak Jacob</h3>
+                                                <h5 class="position-name">Group General Counsel
+                                                </h5>
+                                                <ul class="profile-social"></ul>
+                                                <a href="https://www.careindia.org/our-member/deepak-jacob/"
+                                                    class="go-profile">
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+<!-- management part -->
+
+        <div id="Management" class="tab-pane fade">
+          <p style="font-size: 1.4rem; font-weight: 400; font-family:sans-serif; top: 45px; position: relative;">CARE India has a leadership team which is a blend of professionals from the private
+            and development sector. They bring a wide range of experience to bear upon
+            development challenges and create innovative solutions for long term sustainable
+            impact on the ground.</p>
+
+            <section class="section-full team-members-section">
+                <div class="container">
+                    <h2>Chief Executive Officer (CEO)</h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="single-prof">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                        <div class="single-pic">
+                                            <img src="https://www.careindia.org/wp-content/uploads/2019/04/Puneet-2.jpg"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                        <div class="single-profile">
+                                            <h3 class="profile-name">Puneet Bali</h3>
+                                            <h5 class="position-name"></h5>
+                                            <ul class="profile-social">
+                                                <li class="linkedin">
+                                                    <a href="https://www.linkedin.com/in/balipuneet/?originalSubdomain=in"
+                                                        target="_blank">
+                                                        <i class="fab fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="https://www.careindia.org/our-member/puneet-bali/"
+                                                class="go-profile">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-full team-members-section" style="background-color: rgb(233, 231, 231);">
+                <div class="container">
+                    <h2>CARE Operating Committee</h2>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="single-prof">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                        <div class="single-pic">
+                                            <img src="https://www.careindia.org/wp-content/uploads/2021/07/alok.jpg"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                        <div class="single-profile">
+                                            <h3 class="profile-name">
+                                                Alok Bhushan</h3>
+                                            <h5 class="position-name">Senior Director- Support Services
+                                            </h5>
+                                            <ul class="profile-social">
+                                                <li class="linkedin">
+                                                    <a href="https://www.linkedin.com/in/majalokbhushan/?originalSubdomain=in"
+                                                        target="_blank">
+                                                        <i class="fab fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="https://www.careindia.org/our-member/alok-bhushan/"
+                                                class="go-profile">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>   
+
+
+      </div>
+
+        <!-- contact  -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="contact_"></div>
+    <script>
+        // Load the contact from an external HTML file
+        $(function () {
+            $("#contact_").load("contact_without.html");
+        });
+    </script>   
+
+    <!-- contact addition complete -->
+
+    
+       <!-- footer  -->
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+       <div id="footer_" class="container-fluid"></div>
+       <script>
+           // Load the contact from an external HTML file
+           $(function () {
+               $("#footer_").load("footer_without.html");
+           });
+       </script>
+   
+       <!-- contact addition complete -->
+</body>
+</html>
