@@ -1,0 +1,85 @@
+/* Styling for ring */
+.ring {
+    display: none; /* Initially hide the element */
+    position: absolute; /* Position absolute */
+    top: 450%; /* Distance from the top */
+    left: 50%; /* Distance from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    width: 150px; /* Width of the ring */
+    height: 150px; /* Height of the ring */
+    background: transparent; /* Transparent background */
+    border: 3px solid #3c3c3c; /* Border style */
+    border-radius: 50%; /* Border radius to make it a circle */
+    text-align: center; /* Center text horizontally */
+    line-height: 150px; /* Set line height to vertically center text */
+    font-family: sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+    color: #fff000; /* Text color */
+    letter-spacing: 4px; /* Letter spacing */
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-shadow: 0 0 10px #fff000; /* Text shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5); /* Box shadow */
+}
+
+/* Styling for the ring before pseudo-element */
+.ring:before {
+    content: ''; /* Empty content */
+    position: absolute; /* Position absolute */
+    top: -3px; /* Distance from the top */
+    left: -3px; /* Distance from the left */
+    width: 100%; /* Width */
+    height: 100%; /* Height */
+    border: 3px solid transparent; /* Border style */
+    border-top: 3px solid #fff000; /* Top border color */
+    border-right: 3px solid #fff000; /* Right border color */
+    border-radius: 50%; /* Border radius to make it a circle */
+    animation: animateC 2s linear infinite; /* Apply animation */
+}
+
+/* Styling for the span within the ring */
+.ring-span {
+    display: block; /* Display as block */
+    position: absolute; /* Position absolute */
+    top: calc(50% - 2px); /* Position vertically centered */
+    left: 50%; /* Position horizontally centered */
+    width: 50%; /* Width */
+    height: 4px; /* Height */
+    background: transparent; /* Transparent background */
+    transform-origin: left; /* Set transform origin */
+    animation: animate 2s linear infinite; /* Apply animation */
+}
+
+/* Styling for the span before pseudo-element within the ring */
+.ring-span:before {
+    content: ''; /* Empty content */
+    position: absolute; /* Position absolute */
+    width: 16px; /* Width */
+    height: 16px; /* Height */
+    border-radius: 50%; /* Border radius to make it a circle */
+    background: #fff000; /* Background color */
+    top: -6px; /* Distance from the top */
+    right: -8px; /* Distance from the right */
+    box-shadow: 0 0 20px #fff000; /* Box shadow */
+}
+
+/* Keyframes animation for the ring rotation */
+@keyframes animateC {
+    0% {
+        transform: rotate(0deg); /* Initial rotation */
+    }
+
+    100% {
+        transform: rotate(360deg); /* Final rotation */
+    }
+}
+
+/* Keyframes animation for the span rotation */
+@keyframes animate {
+    0% {
+        transform: rotate(45deg); /* Initial rotation */
+    }
+
+    100% {
+        transform: rotate(405deg); /* Final rotation */
+    }
+}
